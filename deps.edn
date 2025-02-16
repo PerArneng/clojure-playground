@@ -1,0 +1,18 @@
+;; deps.edn
+{
+  ;; Dependencies used by this project
+  :deps
+  {org.clojure/math.combinatorics {:mvn/version "0.1.6"}}
+
+  ;; Paths to search for source files. 
+  ;; Typically we place .clj files in 'src',
+  ;; so if you move main.clj into src/foo.clj
+  ;; this path ensures it is found.
+  :paths ["."]
+
+  ;; Define an alias that will run our namespace "foo"
+  ;; as its entry point.
+  :aliases
+  {:run
+   {:main-opts ["-m" "foo"]}}
+}
